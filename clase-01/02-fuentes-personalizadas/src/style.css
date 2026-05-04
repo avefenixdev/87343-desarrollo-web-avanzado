@@ -1,3 +1,44 @@
+@font-face {
+    font-family: 'Medieval Sharp';
+    font-style: normal;
+    font-weight: 300;
+    src:
+        local('Medieval Sharp Book'),
+        url('fonts/MedievalSharp-Book.woff') format('woff');
+}
+/* cursiva | no negrita */
+@font-face {
+    font-family: 'Medieval Sharp';
+    font-style: italic;
+    font-weight: 300;
+    src:
+        local('Medieval Sharp Book Oblique'),
+        url('fonts/MedievalSharp-BookOblique.woff') format('woff');
+}
+
+/* normal | negrita */
+@font-face {
+    font-family: 'Medieval Sharp';
+    font-style: normal;
+    font-weight: 700;
+    src:
+        local('Medieval Sharp Bold'),
+        url('fonts/MedievalSharp-Bold.woff') format('woff');
+}
+/* cursiva | negrita */
+@font-face {
+    font-family: 'Medieval Sharp';
+    font-style: italic;
+    font-weight: 700;
+    src:
+        local('Medieval Sharp Bold Oblique'),
+        url('fonts/MedievalSharp-BoldOblique.woff') format('woff');
+}
+
+/* Siempre incorporar una tipografía al principio del archivo css */
+/* Por cada versión de la tipografía necesito un font-face */
+/* normal | no negrita */
+
 /* Reset */
 * {
     padding: 0;
@@ -15,6 +56,13 @@ body {
     max-width: 900px;
     border: 1px solid crimson;
     margin: auto;
+}
+
+/* Cómo usé la tipografía */
+h1 {
+    font-family: 'Medieval Sharp', sans-serif;
+    font-style: italic;
+    font-weight: 300;
 }
 
 /* 1. TTF (TrueType Font) */
