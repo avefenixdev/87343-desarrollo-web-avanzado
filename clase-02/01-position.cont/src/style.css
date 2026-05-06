@@ -23,6 +23,8 @@ body {
     height: 600px;
     margin: 40px auto;
     border: 5px solid gold;
+
+    position: relative; /* Posición el padre de .absolute */
 }
 
 .caja {
@@ -33,4 +35,38 @@ body {
     color: white;
     font-weight: bold;
     line-height: 100px; /* centra verticalmente el texto */
+}
+
+/* Por default todos los elementos html están posicionados como estáticos */
+/* position: static */
+
+.static {
+    position: static;
+    background-color: darkblue;
+    top: 10px; /* no funciona */
+    bottom: 50px; /* no funciona */
+    right: 40px; /* no funciona */
+    left: 100px; /* no funciona */
+}
+
+.relative {
+    position: relative;
+    left: 0; /* left y right -> x */
+    /* right: 100px; */
+    /* top: 100px; */ /* top y bottom -> y */
+    bottom: 0;
+    background-color: darkorange;
+}
+
+/* El div con la clase .absolute salio del flujo. Es como si nunca lo hubiera definido dentro del html */
+/* Ese elemento que está absolute si previamente ningun contenedor tiene definido un position de static. El div.absolute se a posición con respecto al viewport (a la ventana del navegador) */
+/* Que si el contenedor está posicionada de alguna manera */
+
+.absolute {
+    position: absolute;
+    right: -50px;
+    top: -50px;
+    border-radius: 50%;
+
+    background-color: darkgreen;
 }
