@@ -83,3 +83,33 @@ body {
 
     background-color: darkgoldenrod;
 }
+/* Que los elementos estén posicionados y que sea distinto de static */
+/* z index es cero */
+.relative-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: darkred;
+}
+.relative-2 {
+    position: relative;
+    top: -50px; /* y */
+    left: 0; /* x */
+    z-index: 10;
+    background-color: darkblue;
+}
+.relative-3 {
+    position: relative;
+    top: -100px; /* y */
+    left: 0; /* x */
+    z-index: 15;
+    background-color: darkgreen;
+}
+.relative-4 {
+    position: relative;
+    top: -150px; /* y */
+    left: 0; /* x */
+    z-index: 20;
+    background-color: darkorange;
+}
