@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset (reinicia los estilos por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    color: crimson;
+}
+
+h3 {
+    color: purple;
+}
+
+/* ! EM (em) element */
+/* EM es relativa a su <etiqueta>, <contenedor>, <body>, <html> */
+/* ! SIEMPRE BUSCA EL FONT SIZE de la etiqueta, contenedor, body y html o busca el por defecto del navegador. (16px valor por defecto del browser) */
+
+html {
+    font-size: 100%; /* 16px */
+}
+
+body {
+    font-size: 10px;
+}
+
+
+article.opinion {
+    font-size: 2em; /* 16px -> 2 * 16px -> 32px */
+    padding: 1em;
+    margin: .5em 1em 2em 3em;
+    border: 2px solid crimson;
+}
+
+h2.titulo {
+    font-size: 2em; /* (32px article) * 2 */
+}
+
+/* ! REM (rem) root element -> html */
+
+p.parrafo {
+    font-size: 1rem; /* html -> fz -> 16px * 1 -> 16px */
+    margin: 3rem; /* html -> fz -> 16px * 3 -> 48px */
+}
+
+/* IDEAL --> todo con em */
+/* EL MEJOR -> em para font-size */
+/* EL MEJOR -> rem para modelo caja */
+/* EL MEJOR -> tengo tamaño pequeño. Mitad html (16px/2) -> px */
+
+/* ! Porcentajes y Viewport */
+
