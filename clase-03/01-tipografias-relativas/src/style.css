@@ -55,5 +55,18 @@ p.parrafo {
 /* EL MEJOR -> rem para modelo caja */
 /* EL MEJOR -> tengo tamaño pequeño. Mitad html (16px/2) -> px */
 
-/* ! Porcentajes y Viewport */
+/* ! Porcentajes (%) y Viewport (vw, vh) */
 
+/* Viewport (rem). Es el elemento del cual se van a fijar el resto para tomar un tamaño. Tamaño del viewport  */
+
+.papa {
+    background-color: darkred;
+    height: 20px;
+    color: white;
+    width: 100vw;
+}
+
+.hijo {
+    background-color: darkblue;
+    width: 25vw;
+}
