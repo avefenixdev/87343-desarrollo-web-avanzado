@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 /* Reset (reinicia los estilos por defecto del navegador */
 * {
     margin: 0;
@@ -7,6 +8,46 @@
     box-sizing: border-box;
 }
 
+/* Custom Properties o Variables */
+:root { /*  Es más especifico que el html */
+    --mi-color-de-fondo: #ddd;
+    --valor-cero: 0;
+    --color-de-titulos: crimson;
+    --color-de-links: blueviolet;
+}
+
+html {
+    font-size: 100%; /* 16px */
+}
+
+
 body {
     font-family: "Roboto", sans-serif;
+    background-color: var(--mi-color-de-fondo, red);
+}
+
+/* las variables pueden estar también en cualquier regla CSS */
+.contenedor {
+    --mi-color-de-fondo: #bbb;
+    background-color: var(--mi-color-de-fondo);
+    width: 70vw;
+    margin: auto;
+    padding: 2rem; /* 32px */
+}
+/* cipchk.cssrem */
+/* https://nekocalc.com/es/px-a-rem-conversor */
+
+.grupo {
+    background-color: lightpink;
+    margin: 1.25rem;
+}
+
+/* ! :first-child | :last-child */
+/* Selecionar el primero de los parrafos dentro del div .parrafos */
+.parrafos p:first-child {
+    color: crimson;
+}
+/* Selecionar el último de los parrafos dentro del div .parrafos */
+.parrafos p:last-child {
+    color: blueviolet;
 }
