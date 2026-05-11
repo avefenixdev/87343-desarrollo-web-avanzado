@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #ddd;
+    font-size: 1.25rem;
+}
+
+/* Para aplicar CSS Grid tengo que hacerlo sobre el padre (como flexbox) */
+/* filas -> tracks */
+/* columnas -> tracks */
+.contenedor {
+    display: grid; /* Convierto al contenedor en un contenedor GRID */
+    /* ? Grilla explicita */ /* Grilla que define el desarrollar */
+    /* columnas (tracks) */
+    /* unidades fraccionales -> fraction -> fr */
+    /* grid-template-columns: 300px 300px 300px 200px; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    /* repeat(cantidad, dimensión) */
+    grid-template-columns: repeat(3, .8fr) repeat(2, 2fr);
+    /* filas (tracks) */
+    grid-template-rows: 4fr repeat(3, 1fr);
+    /* ? Grillas implicitas (Se generan dinamicamente) */
+    grid-auto-rows: 2fr;
+
+    /* row-gap: 2rem;
+    column-gap: 3rem; */
+    gap: 1rem;
+
+    width: 43.75rem;
+    height: 31.25rem;
+    background-color: mediumseagreen;
+}
+
+.elemento {
+    background-color: mediumorchid;
+}
